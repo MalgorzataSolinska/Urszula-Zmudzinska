@@ -8,7 +8,7 @@
     <meta name="description" content="dr Urszula Żmudzińska" />
     <meta property="og:title" content="Fizjoterapeutka i terapeutka zajęciowa" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https:" />
+    <meta property="og:url" content="https:urszulazmudzinska.netlify.app" />
     <style>
       html {
         scroll-behavior: smooth;
@@ -41,7 +41,7 @@
         >
           dr Urszula Żmudzińska</a
         >
-        <button id="menu-toggle" class="right-5 fixed md:hidden hover:text-gray-400 bg-gray">
+        <button id="menu-toggle" class="right-5 fixed lg:hidden hover:text-gray-400 bg-gray">
           <svg
             class="w-8 h-8"
             fill="none"
@@ -56,10 +56,13 @@
 
         <ul
           id="menu"
-          class="font-karla top-16 md:top-0 shadow-lg md:shadow-none bg-white w-auto h-auto hidden md:flex flex-col md:flex-row md:justify-end z-50 md:bg-white rounded-lg text-center right-0 md:items-end md:text-nowrap absolute md:static"
+          class="font-karla top-16 lg:top-0 shadow-lg lg:shadow-none bg-white w-auto h-auto hidden lg:flex flex-col lg:flex-row lg:justify-end z-50 lg:bg-white rounded-lg text-center right-0 lg:items-end lg:text-nowrap absolute lg:static"
         >
           <li class="menu-item cursor-pointer px-4 py-2 rounded-lg hover:bg-gray-100">
             <a href="#about-me" class="text-lg hover:text-gray-600 transition duration-500 menu-link">O mnie</a>
+          </li>
+          <li class="menu-item cursor-pointer px-4 py-2 rounded-lg hover:bg-gray-100">
+            <a href="#services" class="text-lg hover:text-gray-600 transition duration-500 menu-link">Usługi </a>
           </li>
           <li class="menu-item cursor-pointer px-4 py-2 rounded-lg hover:bg-gray-100">
             <a href="#education" class="text-lg hover:text-gray-600 transition duration-500 menu-link">Wykształcenie</a>
@@ -69,6 +72,7 @@
               >Doświadczenie
             </a>
           </li>
+
           <li class="menu-item cursor-pointer px-4 py-2 rounded-lg hover:bg-gray-100">
             <a href="#contact" class="text-lg hover:text-gray-600 transition duration-500 menu-link">Kontakt</a>
           </li>
@@ -82,9 +86,7 @@
     >
       <!-- Wizytówka -->
 
-      <div
-        class="absolute animate-slideInLeft bg-white bg-opacity-70 flex p-6 rounded-lg items-center left-0 justify-center bottom-5 md:left-5 md:translate-x-0 shadow-lg"
-      >
+      <div class="absolute animate-slideInLeft bg-white bg-opacity-70 p-6 rounded-lg items-center bottom-5 md:left-5">
         <div class="text-center space-y-2">
           <p class="font-karla text-4xl md:text-5xl lg:text-6xl text-gray-800">Urszula Żmudzińska</p>
           <p class="font-inconsolata text-xl font-light text-gray-600">Fizjoterapeutka i Terapeutka Zajęciowa</p>
@@ -95,7 +97,7 @@
     <main class="w-full">
       <section
         id="about-me"
-        class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-all duration-1000 opacity-0"
+        class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-opacity duration-1000 opacity-0 -translate-x-5 animate-on-scroll"
       >
         <h2 class="font-karla text-3xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
           <svg
@@ -116,14 +118,21 @@
         <div class="flex flex-col md:flex-row items-center justify-between">
           <div class="font-inconsolata text-justify mb-4 md:mr-10 w-full">
             <p>
-              Jestem oddaną fizjoterapeutką, specjalistką terapii zajęciowej oraz terapeutką integracji sensorycznej.
-              Doświadczenie zdobywam od 2013 roku i ciągle podnoszę swoje umiejętności obecnie pracuję jako asystentka w
-              Zakładzie Terapii Sensorycznej na AWF w Krakowie. Prywatnie jestem mamą dwójki dzieci, miłośniczką
-              literatury fantasy, turystyki i aktywności fizycznej.
+              Jestem doktorem nauk o kulturze fizycznej, terapeutką zajęciową i fizjoterapeutką. Ukończyłam liczne kursy
+              z zakresu terapii dzieci (integracja sensoryczna, NDT Bobath, terapia ręki). <br />
+              Posiadam doświadczenie w pracy z dziećmi z zaburzeniami przetwarzania sensorycznego, niepełnosprawnością
+              intelektualną, ruchową, zespołem Downa oraz ze spektrum autyzmu. Opracowałam autorski program ćwiczeń
+              sensomotorycznych i mam na koncie publikacje naukowe oraz wystąpienia na konferencjach z zakresu terapii
+              zajęciowej i fizjoterapii. Jestem autorem innowacji społecznej dotyczącej dostosowania przestrzeni do
+              potrzeb osób z niepełnosprawnościami. <br />
+              Regularnie podnoszę swoje kwalifikacje przez kursy doskonalące. Moim celem jest poszukiwanie rozwiązań,
+              które zwiększają samodzielność i poprawiają jakość życia dzieci z trudnościami w nauce,
+              niepełnosprawnością ruchową, zespołem Downa oraz spektrum autyzmu. Ruch i jego wpływ na funkcjonowanie
+              dziecka to moja pasja.
             </p>
           </div>
           <div>
-            <img src="/images/ula.jpg" alt="Urszula Zmudzinska." class="rounded-lg shadow-lg" />
+            <img src="/images/ula.jpeg" alt="Urszula Zmudzinska." class="rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -133,9 +142,41 @@
         style="background-image: url('/images/1.jpeg'); background-size: full"
       ></div>
 
+      <section id="services" class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-opacity duration-1000 opacity-0 -translate-x-5 animate-on-scroll">
+        <h2 class="font-karla text-3xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
+          <svg
+            class="w-8 h-8 text-gray-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v6M9 12h6" />
+          </svg>
+          Usługi
+        </h2>
+        <div class="font-inconsolata space-y-6 mb-6">
+          <ul class="list-disc list-inside space-y-4 font-inconsolata text-left">
+            <li>Terapia Integracji Sensorycznej</li>
+            <li>Terapia Ręki </li>
+            <li>Terapia Wad Postawy</li>
+            <li>Terapia zajęciowa dzieci </li>
+          </ul>
+      </section>
+      <div
+      id="background-image1"
+      class="w-full bg-cover bg-center md:bg-fixed bg-no-repeat h-[300px] shadow-xl"
+      style="background-image: url('/images/7.jpeg'); background-size: full"
+    ></div>
       <section
         id="education"
-        class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-all duration-1000 opacity-0"
+        class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-opacity duration-1000 opacity-0 -translate-x-5 animate-on-scroll"
       >
         <h2 class="font-karla text-3xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
           <svg
@@ -155,13 +196,35 @@
           </svg>
           Wykształcenie
         </h2>
+        <h3 class="font-karla text-xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
+          Kursy i szkolenia
+        </h3>
+        <div class="font-inconsolata space-y-6 mb-6">
+          <ul class="list-disc list-inside space-y-4 font-inconsolata text-left">
+            <li>NDT Bobath</li>
+            <li>Integracja sensoryczna</li>
+            <li>Terapia ręki I i II stopień</li>
+            <li>Terapia Metoda Snoezelen</li>
+            <li>Metoda Dobrego Startu</li>
+            <li>Metoda W. Sherborne</li>
+            <li>Smykomultisensoryka</li>
+            <li>PNF</li>
+            <li>Masaż Shantala</li>
+            <li>Kinesiotaping</li>
+            <li>Muzykoterapia dla dzieci</li>
+          </ul>
+        </div>
+
+        <h3 class="font-karla text-xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
+          Stopnie naukowe
+        </h3>
         <div class="font-inconsolata space-y-6">
-          <ul class="list-disc list-inside space-y-4 font-inconsolata text-justify">
+          <ul class="list-disc list-inside space-y-4 font-inconsolata text-left">
             <li><strong>2022:</strong> Doktor nauk o kulturze fizycznej, AWF w Krakowie.</li>
-            <li>
-              <strong>2017:</strong> Studia podyplomowe z zakresu integracji sensorycznej, ANDRAGO Centrum w Kielcach.
-            </li>
+            <li><strong>2017:</strong> Studia podyplomowe - integracja sensoryczna, ANDRAGO Centrum w Kielcach.</li>
             <li><strong>2016:</strong> Licencjat z terapii zajęciowej, AWF w Krakowie.</li>
+            <li><strong>2014:</strong> Magister Fizjoterapii, AWF w Krakowie.</li>
+            <li><strong>2014:</strong> Studium Pedagogiczne, Politechnika Krakowska.</li>
           </ul>
         </div>
       </section>
@@ -170,7 +233,7 @@
         class="w-full bg-cover bg-center md:bg-fixed bg-no-repeat h-[300px] shadow-xl"
         style="background-image: url('/images/4.jpeg'); background-size: full"
       ></div>
-      <section id="experience" class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg">
+      <section id="experience" class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-opacity duration-1000 opacity-0 -translate-x-5 animate-on-scroll">
         <h2 class="font-karla text-3xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
           <svg
             class="w-8 h-8 text-gray-600"
@@ -190,16 +253,35 @@
         </h2>
         <div class="font-inconsolata space-y-6">
           <div>
-            <h3 class="font-bold text-lg">Asystent na AWF Kraków (2020 – obecnie)</h3>
+            <h3 class="font-bold text-lg hover:underline hover:text-gray-600">
+              <a
+                href="https://wrr.awf.krakow.pl/instytut-nauk-stosowanych/125-artykuly-pracownikow/1068-mgr-urszula-zmudzinska"
+                target="_blank"
+                >Asystentka na AWF Kraków - od 2020r.</a
+              >
+            </h3>
             <p>Prowadzenie zajęć dydaktycznych z zakresu terapii sensorycznej oraz wsparcie studentów.</p>
           </div>
           <div>
-            <h3 class="font-bold text-lg">Fizjoterapeuta dziecięcy, Fundacja Inkluzja (2019–2020)</h3>
-            <p>Rehabilitacja dzieci z zaburzeniami rozwojowymi.</p>
+            <h3 class="font-bold text-lg hover:underline hover:text-gray-600">
+              <a href="https://www.zss14.pl/?page_id=2306" target="_blank">
+                Terapeutka Integracji Sensorycznej, Zespół Szkół Specjalnych nr 14 w Krakowie - od 2020r.</a
+              >
+            </h3>
+            <p>Prowadzenie zajęc terapeutycznych usprawniających odbiór i przetwarzanie bodźców sensorycznych.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg hover:underline hover:text-gray-600">
+              <a href="https://www.korwr.pl/index.html#departments" target="_blank">
+                Fizjoterapeutka w Krakowskim Ośrodku Rehabilitacji Wieku Rozwojowego - od 2022r.</a
+              >
+            </h3>
+            <p>Fizjoterapia i praca z dziecmi z wadami postawy.</p>
           </div>
         </div>
       </section>
-      <section id="contact" class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg">
+
+      <section id="contact" class="my-8 m-4 p-6 bg-white shadow-lg rounded-lg transform transition-opacity duration-1000 opacity-0 -translate-x-5 animate-on-scroll">
         <h2 class="font-karla text-3xl font-bold text-left mb-6 text-gray-800 flex items-center gap-3">
           <svg
             class="w-8 h-8 text-gray-600"
@@ -236,6 +318,7 @@
         <p class="font-karla">© 2025 Urszula Żmudzińska. Wszelkie prawa zastrzeżone.</p>
         <p>
           <a href="#about" class="hover:text-primary">O mnie</a> |
+          <a href="#services" class="hover:text-primary">Usługi</a> |
           <a href="#education" class="hover:text-primary">Wykształcenie</a> |
           <a href="#experience" class="hover:text-primary">Doświadczenie</a> |
           <a href="#contact" class="hover:text-primary">Kontakt</a>

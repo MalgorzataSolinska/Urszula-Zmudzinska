@@ -58,10 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     const namePlaceholderView =  viewportHeight*0.85;
-    const aboutMeTop = aboutMe.offsetTop - viewportHeight * 0.95;
-    const aboutMeBottom = aboutMe.offsetTop + aboutMe.offsetHeight - viewportHeight * 0.15;
-    const educationTop = education.offsetTop - (viewportHeight * 0.97);
-    const educationBottom = education.offsetTop + education.offsetHeight - (viewportHeight * 0.15);
+
 
     if (window.scrollY > namePlaceholderView) {
       namePlaceholder.classList.add('opacity-100', 'translate-x-0');
@@ -70,19 +67,25 @@ document.addEventListener('DOMContentLoaded', () => {
       namePlaceholder.classList.add('-translate-x-5', 'opacity-0');
       namePlaceholder.classList.remove('opacity-100', 'translate-x-0');
     }
-    if (window.scrollY > aboutMeTop && window.scrollY < aboutMeBottom) {
-      aboutMe.classList.add('opacity-100', 'translate-x-0');
-      aboutMe.classList.remove('-translate-x-5', 'opacity-0');
-    } else {
-      aboutMe.classList.add('-translate-x-5', 'opacity-0');
-      aboutMe.classList.remove('opacity-100', 'translate-x-0');
-    }
-    if (window.scrollY > educationTop && window.scrollY < educationBottom) {
-      education.classList.add('opacity-100', 'translate-x-0');
-      education.classList.remove('-translate-x-5', 'opacity-0');
-    } else {
-      education.classList.add('-translate-x-5', 'opacity-0');
-      education.classList.remove('opacity-100', 'translate-x-0');
-    }
   });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-x-0');
+          entry.target.classList.remove('opacity-0', '-translate-x-5');
+        } else {
+          entry.target.classList.add('opacity-0', '-translate-x-5');
+          entry.target.classList.remove('opacity-100', 'translate-x-0');
+        }
+      });
+    },
+    { threshold: 0.1 } // Uruchamia animację, gdy 10% elementu jest widoczne
+  );
+
+  elementsToAnimate.forEach((element) => observer.observe(element));
 });
