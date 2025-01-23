@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', () => {
-    const namePlaceholderView =  viewportHeight;
+    const namePlaceholderView =  viewportHeight*0.85;
     const aboutMeTop = aboutMe.offsetTop - viewportHeight * 0.95;
     const aboutMeBottom = aboutMe.offsetTop + aboutMe.offsetHeight - viewportHeight * 0.15;
     const educationTop = education.offsetTop - (viewportHeight * 0.97);
