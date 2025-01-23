@@ -1,0 +1,4 @@
+[build]
+  base = "."              # Główna lokalizacja, w której Netlify instaluje zależności (domyślnie katalog główny)
+  publish = "src"        # Katalog, w którym Netlify znajdzie gotowe pliki do publikacji
+  command = "npm run build" # Komenda do uruchomienia procesu budowania (np. dla Tailwind, kompilacja CSS)
